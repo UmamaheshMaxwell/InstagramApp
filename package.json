@@ -1,0 +1,23 @@
+{
+  "name": "instapics",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "connect-flash": "*",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "express-messages": "*",
+    "express-session": "*",
+    "instagram-node": "*",
+    "jade": "~1.11.0",
+    "moment": "*",
+    "morgan": "~1.7.0",
+    "nodemon": "^1.10.2",
+    "serve-favicon": "~2.3.0"
+  }
+}

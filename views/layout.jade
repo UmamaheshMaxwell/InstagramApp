@@ -1,0 +1,27 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/kickstart.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/lightbox.css')
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+		script(src="javascripts/kickstart.js")
+		script(src="javascripts/lightbox.js")
+
+	body
+		ul.menu
+			li
+				a(href="/") INSTAPICS
+			if !isLoggedIn
+				li
+					a(href="/login") Login With Instagram
+			else
+				li
+					a(href="/main") Main Feed
+				li
+					a(href="/me") My Images
+				li
+					a(href="/logout") Logout
+		.grid  	 		
+	block content
